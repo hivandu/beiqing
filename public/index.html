@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+  <meta name="apple-touch-fullscreen" content="no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>2016北青年度车评选</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/swiper.min.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="loading"></div>
+    <div id="wrapper">
+      <div class="swiper-container swiper-container-vertical">
+        <div class="swiper-wrapper">
+          <section class="swiper-slide scene-wrapper first-slide">
+            <img src="images/bg_1.jpg" alt="" class="bg">
+            <p class="regulations-btn" @click="regulationsShow">
+              <span>活动细则</span>
+            </p>
+            <div class="regulations" v-if="regulations">
+              <div class="inner">
+                <p>活动细则：
+                  <br>由《北京青年报》主办的“万名京城市民票选年度车”评选活动现已全面启动。您可以通过“青车熟路1995”微信平台、OK家APP车生活及线下投票，最终评选出年度最受欢迎的品牌车型。投票完成后，即可参与抽奖。（投票完成后，我们会于1月4日公示中奖名单，请大家持续关注。）
+                  <br>投票时间：2016年12月17号—2017年1月3号
+
+                  <br>奖品：100元京东购物卡
+                </p>
+                <input type="button" name="" class="close" value="关闭" @click="regulationsHide">
+              </div>
+            </div>
+          </section>
+          <section class="swiper-slide scene-wrapper" v-for="page in viewData">
+            <img src="images/bg_2.jpg" alt="" class="bg">
+            <div class="scene-1 scene">
+              <h3>PART&nbsp;0{{ $index+1 }}</h3>
+              <span class="scene-line"></span>
+              <p>{{ page.name }}</p>
+            </div>
+            <div class="select-click">
+              <a @click="carListShow" class="select-btn">{{ selectName }}</a>
+            </div>
+            <div class="car-list" v-if="carListStatus">
+              <form action="" class="select-form" id="{{ page.secVoteId }}">
+                <div class="select-status" @click="carListHide(page.secVoteId)">{{ selectStatus }}</div>
+                <div class="close" @click="carListHide(page.secVoteId)">
+                  <p></p>
+                  <p></p>
+                </div>
+                <!-- 分类列表 -->
+                <ol class="car-status">
+                  <li v-for="item in page.subVote">
+                    <h5 class="que">{{$index+1}}. {{item.name}}</h5>
+                    <!-- 车型列表 -->
+                    <ol class="list">
+                      <li v-for="list in item.options">
+                        <p>
+                          <label for="select-{{list.optionId}}">
+                            <input type="radio" name="select-{{item.subVoteId}}" id="select-{{list.optionId}}" value="{{list.optionId}}" @change="theSelect(list.name, item.subVoteId, page.secVoteId, page.subVote)"> {{ list.name }}
+                          </label>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </form>
+            </div>
+            <div class="fruit">
+              <p class="fruit-click" @click="fruitClick(page.secVoteId)">查看结果</p>
+            </div>
+            <div class="fruit-result" v-if="fruitStatus">
+              <div class="fruit-inner">
+                <div class="close" @click="fruitClose">
+                  <p></p>
+                  <p></p>
+                </div>
+                <ul class="fruit-items">
+                  <li class="fruit-item" v-for="item in ticketResult">
+                    <h4>{{item.name}}</h4>
+                    <ol>
+                      <li v-for="list in item.options">
+                        <h5>{{list.name}}</h5>
+                        <p>
+                          <span style="width: {{ count(list.optionCount, item.total)}}%"></span>
+                          <b>{{ count(list.optionCount, item.total)}}%</b>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="swiper-slide scene-wrapper">
+            <img src="images/bg_2.jpg" alt="" class="bg">
+            <div class="prize">
+              <img src="images/jd_card_100.png" alt="">
+              <p>（同一手机号只有一次抽奖机会）</p>
+            </div>
+            <form action="" class="prizeForm" id="prize">
+              <p @click="nameInput" class="name">
+                <label for="">姓名:</label>
+                <input type="text" value="" v-model="personName">
+              </p>
+              <p @click="phoneInput" class="phone">
+                <label for="">手机号:</label>
+                <input type="text" value="" v-model="personPhone">
+              </p>
+              <a class="submit" @click="person">提交信息</a>
+            </form>
+          </section>
+        </div>
+        <div class="swiper-button-next next-page" @click='nextSwiperClick' v-show="nextButton">
+          <img src="images/next.png" alt="">
+          <p style="margin-top:10px; color: #ddd; text-align:center;">点击进入</p>
+        </div>
+      </div>
+    </div>
+</body>
+<script src=http://cdn.staticfile.org/jquery/2.2.4/jquery.min.js charset=utf-8></script>
+<script type="text/javascript" src="javascripts/swiper.min.js">
+</script>
+<script src=http://cdn.staticfile.org/vue/1.0.28/vue.min.js charset=utf-8></script>
+<!-- <script src=http://cdn.staticfile.org/vue/2.0.1/vue.min.js charset=utf-8></script> -->
+<script type="text/javascript" src="javascripts/vote-app.js"></script>
+
+</html>

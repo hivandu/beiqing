@@ -1,0 +1,53 @@
+{
+	"status": "success",
+	"msg": "success",
+	"req": null,
+	"result": {
+		"topVote": {
+			"topId": "100",
+			"name": "2016北青年度车评选",
+			"secVote": [{
+					"secVoteId": "110",
+					"name": "轿车车型",
+					"subVote": [{
+							"subVoteId": "1",
+							"name": "您认为最具代表性的2016年度新锐品质轿车车型为？",
+							"options": [{
+									"optionId": "1",
+									"name": "吉利新帝豪",
+									"optionCount": 4
+								},{
+									"optionId": "2",
+									"name": "吉利新帝豪2",
+									"optionCount": 6
+								},{
+									"optionId": "3",
+									"name": "吉利新帝豪3",
+									"optionCount": 62
+								},{
+									"optionId": "4",
+									"name": "吉利新帝豪4",
+									"optionCount": 12
+								}
+							]
+						}, {
+							"subVoteId": "3",
+							"name": "您认为最具代表性的2016年度紧凑型运动轿车车型为？",
+							"options": [{
+									"optionId": "10",
+									"name": "日产轩逸",
+									"optionCount": 1
+								}, {
+									"optionId": "11",
+									"name": "别克英朗",
+									"optionCount": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"typeName": "RenderData"
+}

@@ -1,0 +1,296 @@
+{
+	"status": "success",
+	"msg": "success",
+	"req": null,
+	"resutl": {
+		"topVote": {
+			"topId": "100",
+			"name": "2016北青年度车评选",
+			"secVote": [{
+					"secVoteId": "110",
+					"name": "轿车车型",
+					"subVote": [{
+							"subVoteId": "1",
+							"name": "您认为最具代表性的2016年度新锐品质轿车车型为？",
+							"options": [{
+									"optionId": "1",
+									"name": "吉利新帝豪"
+								}, {
+									"optionId": "2",
+									"name": "荣威350"
+								}, {
+									"optionnameId": "3",
+									"name": "全新景逸S50"
+								}, {
+									"optionId": "4",
+									"name": "绅宝D50"
+								}
+							]
+						}, {
+							"subVoteId": "2",
+							"name": "您认为最具代表性的2016年度紧凑型车车型为？",
+							"options": [{
+									"optionId": "5",
+									"name": "一汽丰田卡罗拉"
+								}, {
+									"optionId": "6",
+									"name": "全新大众速腾"
+								}, {
+									"optionId": "7",
+									"name": "东风标致308"
+								}, {
+									"optionId": "8",
+									"name": "雪佛兰科鲁兹"
+								}
+							]
+						}, {
+							"subVoteId": "3",
+							"name": "您认为最具代表性的2016年度紧凑型运动轿车车型为？",
+							"options": [{
+									"optionId": "9",
+									"name": "本田思域"
+								}, {
+									"optionId": "10",
+									"name": "日产轩逸"
+								}, {
+									"optionId": "11",
+									"name": "别克英朗"
+								}, {
+									"optionId": "12",
+									"name": "丰田雷凌Turbo"
+								}
+							]
+						}, {
+							"subVoteId": "4",
+							"name": "您认为最具代表性的2016年度中高级车车型为？",
+							"options": [{
+									"optionId": "13",
+									"name": "雪铁龙C6"
+								}, {
+									"optionId": "14",
+									"name": "大众全新迈腾"
+								}, {
+									"optionId": "15",
+									"name": "日产西玛"
+								}, {
+									"optionId": "16",
+									"name": "长安福特蒙迪欧"
+								}
+							]
+						}, {
+							"subVoteId": "5",
+							"name": "您认为最具代表性的2016年度中型环保轿车车型为？",
+							"options": [{
+									"optionId": "17",
+									"name": "雅阁锐混动"
+								}, {
+									"optionId": "18",
+									"name": "迈锐宝XL"
+								}, {
+									"optionId": "19",
+									"name": "新天籁"
+								}, {
+									"optionId": "20",
+									"name": "凯美瑞"
+								}
+							]
+						}, {
+							"subVoteId": "6",
+							"name": "您认为最具代表性的2016年度进口旅行轿车车型为？",
+							"options": [{
+									"optionId": "21",
+									"name": "奔驰c级旅行版"
+								}, {
+									"optionId": "22",
+									"name": "进口大众蔚揽"
+								}, {
+									"optionId": "23",
+									"name": "沃尔沃V60"
+								}, {
+									"optionId": "24",
+									"name": "斯柯达新速尊旅行车"
+								}
+							]
+						}, {
+							"subVoteId": "7",
+							"name": "您认为最具代表性的2016年度中大型豪华轿车车型为？",
+							"options": [{
+									"optionId": "25",
+									"name": "凯迪拉克XTS"
+								}, {
+									"optionId": "26",
+									"name": "上汽大众辉昂"
+								}, {
+									"optionId": "27",
+									"name": "捷豹XF"
+								}, {
+									"optionId": "28",
+									"name": "英菲尼迪Q70"
+								}
+							]
+						}, {
+							"subVoteId": "8",
+							"name": "您认为最具代表性的2016年度最受期待长轴距轿车车型为？",
+							"options": [{
+									"optionId": "29",
+									"name": "奔驰E级"
+								}, {
+									"optionId": "30",
+									"name": "沃尔沃S90"
+								}, {
+									"optionId": "31",
+									"name": "宝马5系L"
+								}, {
+									"optionId": "32",
+									"name": "奥迪A6L"
+								}
+							]
+						}, {
+							"subVoteId": "9",
+							"name": "您认为最具代表性的2016年度科技革新轿车车型为？",
+							"options": [{
+									"optionId": "33",
+									"name": "宝马3系"
+								}, {
+									"optionId": "34",
+									"name": "奥迪全新A4L"
+								}, {
+									"optionId": "35",
+									"name": "奔驰C级"
+								}, {
+									"optionId": "36",
+									"name": "凯迪拉克ATS"
+								}
+							]
+						}
+					]
+				}, {
+					"secVoteId": "120",
+					"name": "SUV车型",
+					"subVote": [{
+							"subVoteId": "10",
+							"name": "您认为最具代表性的2016年度品质SUV车型为？",
+							"options": [{
+									"optionId": "37",
+									"name": "奇瑞瑞虎7"
+								}, {
+									"optionId": "38",
+									"name": "吉利博越"
+								}, {
+									"optionId": "39",
+									"name": "本田缤智"
+								}, {
+									"optionId": "40",
+									"name": "现代ix25"
+								}
+							]
+						}, {
+							"subVoteId": "11",
+							"name": "您认为最具代表性的2016年度紧凑型车车型为？",
+							"options": [{
+									"optionId": "41",
+									"name": "昂科威"
+								}, {
+									"optionId": "42",
+									"name": "日产奇骏"
+								}, {
+									"optionId": "43",
+									"name": "现代胜达"
+								}, {
+									"optionId": "44",
+									"name": "本田CR-V"
+								}
+							]
+						}, {
+							"subVoteId": "12",
+							"name": "您认为最具代表性的2016年度紧凑型SUV车型为？",
+							"options": [{
+									"optionId": "45",
+									"name": "大众途观"
+								}, {
+									"optionId": "46",
+									"name": "长安福特新翼虎"
+								}, {
+									"optionId": "47",
+									"name": "RAV4荣放"
+								}, {
+									"optionId": "48",
+									"name": "起亚KX5"
+								}
+							]
+						}, {
+							"subVoteId": "13",
+							"name": "您认为最具代表性的2016年度互联SUV车型为？",
+							"options": [{
+									"optionId": "49",
+									"name": "艾瑞泽7"
+								}, {
+									"optionId": "50",
+									"name": "荣威RX5"
+								}, {
+									"optionId": "51",
+									"name": "现代ix35"
+								}, {
+									"optionId": "52",
+									"name": "本田CRV"
+								}
+							]
+						}, {
+							"subVoteId": "14",
+							"name": "您认为最具代表性的2016年度中大型SUV车型为？",
+							"options": [{
+									"optionId": "53",
+									"name": "丰田汉兰达"
+								}, {
+									"optionId": "54",
+									"name": "福特锐界"
+								}, {
+									"optionId": "55",
+									"name": "广汽传祺GS8"
+								}, {
+									"optionId": "56",
+									"name": "哈弗H9"
+								}
+							]
+						}, {
+							"subVoteId": "15",
+							"name": "您认为最具代表性的2016年度德系SUV车型为？",
+							"options": [{
+									"optionId": "57",
+									"name": "宝沃BX7"
+								}, {
+									"optionId": "58",
+									"name": "奔驰GLC"
+								}, {
+									"optionId": "59",
+									"name": "宝马X3"
+								}, {
+									"optionId": "60",
+									"name": "奥迪Q5"
+								}
+							]
+						}, {
+							"subVoteId": "16",
+							"name": "您认为最具代表性的2016年度都市豪华SUV车型为？",
+							"options": [{
+									"optionId": "61",
+									"name": "上汽通用XT5"
+								}, {
+									"optionId": "62",
+									"name": "奥迪Q5"
+								}, {
+									"optionId": "63",
+									"name": "奔驰GLE"
+								}, {
+									"optionId": "64",
+									"name": "宝马X3"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"typeName": "RenderData"
+}
